@@ -7,7 +7,16 @@ module.exports = {
       options: {
         apiURL: `http://localhost:1337/api`,
         // Instead of contentTypes: [`article`]
-        singleTypes: [`help-center-posts-plural`],
+        singleTypes: [`help-center-posts-plural`]      
+         },
+    },
+    `gatsby-plugin-postcss`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/, // See below to configure properly
+        },
       },
     },
   ],

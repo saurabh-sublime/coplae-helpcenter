@@ -1,16 +1,15 @@
 import React from 'react';
 
-import Title from '@/components/Title';
+import '@/styles/global.css';
+import Category from '@/components/Category/Category';
+import Hero from '@/components/Hero/Hero';
+import Layout from '@/components/Layout';
 
 export default function Home() {
   return (
-    <main>
-      <Title>Hello TypeScript!</Title>
-      <p>A TypeScript starter for Gatsby. Great for advanced users.</p>
-      <p>
-        Follow me on Twitter (
-        <a href="https://twitter.com/jpedroschmitz">@jpedroschmitz</a>)
-      </p>
-    </main>
+    <Layout className="overflow-hidden font-roboto">
+      <Hero />
+      <Category />
+    </Layout>
   );
 }
